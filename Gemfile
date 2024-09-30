@@ -55,4 +55,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-gem 'faker', '~> 2.23'
+gem 'faker', '~> 3.4'
