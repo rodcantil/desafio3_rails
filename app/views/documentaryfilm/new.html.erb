@@ -1,0 +1,15 @@
+<h1 class="text-center">Ingresar Documental</h1>
+<br><br><br>
+
+<%= form_with model: @documentaryfilm, method: :post do |form| %>
+<div class="col-4 mx-auto">
+<div>
+    <%= form.label :title, "Titulo del Documental", class: "form-label" %>
+    <%= form.text_field :title, class: "form-control" %>
+</div>
+<br>
+<div>
+    <%= form.submit "Ingresar", class: "btn btn-danger" %> 
+</div>
+</div>
+<% end %>
