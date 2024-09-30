@@ -1,5 +1,7 @@
 class DocumentaryfilmController < ApplicationController
   def index
+    @documentaryfilm = Documentaryfilm.all
+    @doculast = Documentaryfilm.last
   end
 
   def new

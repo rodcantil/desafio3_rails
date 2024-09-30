@@ -1,2 +1,12 @@
-<h1>Documentaryfilm#index</h1>
-<p>Find me in app/views/documentaryfilm/index.html.erb</p>
+<h1 class="text-center">Lista de Documentales </h1>
+<br>
+<div class="container">
+<p>El documental <%= @doculast.title %> ha sido ingresado con exito</p>
+<br>
+<ol>
+    <% @documentaryfilm.each do |doc| %>
+        <li><%= doc.title %></li>
+    <% end %>
+
+</ol>
+</div>

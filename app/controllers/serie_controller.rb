@@ -1,5 +1,7 @@
 class SerieController < ApplicationController
   def index
+    @serie = Serie.all
+    @serielast = Serie.last
   end
   
   

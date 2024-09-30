@@ -1,5 +1,7 @@
 class MovieController < ApplicationController
   def index
+    @movie = Movie.all
+    @movielast = Movie.last
   end
   
   

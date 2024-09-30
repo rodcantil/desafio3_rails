@@ -1,2 +1,12 @@
-<h1>Serie#index</h1>
-<p>Find me in app/views/serie/index.html.erb</p>
+<h1 class="text-center">Lista de Series</h1>
+<br>
+<div class="container">
+<p>La serie <%= @serielast.title %> ha sido ingresada con exito</p>
+<br>
+<ol>
+    <% @serie.each do |s| %>
+        <li><%= s.title %></li>
+    <% end %>
+
+</ol>
+</div>
