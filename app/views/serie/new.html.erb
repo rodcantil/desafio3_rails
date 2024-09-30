@@ -1,2 +1,15 @@
-<h1>Serie#new</h1>
-<p>Find me in app/views/serie/new.html.erb</p>
+<h1 class="text-center">Ingresar Serie</h1>
+<br><br><br>
+
+<%= form_with model: @serie, method: :post do |form| %>
+<div class="col-4 mx-auto">
+<div>
+    <%= form.label :title, "Titulo de la Serie", class: "form-label" %>
+    <%= form.text_field :title, class: "form-control" %>
+</div>
+<br>
+<div>
+    <%= form.submit "Ingresar", class: "btn btn-danger" %> 
+</div>
+</div>
+<% end %>

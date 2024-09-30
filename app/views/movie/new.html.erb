@@ -1,2 +1,15 @@
-<h1>Movie#new</h1>
-<p>Find me in app/views/movie/new.html.erb</p>
+<h1 class="text-center">Ingresar Pelicula</h1>
+<br><br><br>
+
+<%= form_with model: @movie, method: :post do |form| %>
+<div class="col-4 mx-auto">
+<div>
+    <%= form.label :title, "Titulo de la Pelicula", class: "form-label" %>
+    <%= form.text_field :title, class: "form-control" %>
+</div>
+<br>
+<div>
+    <%= form.submit "Ingresar", class: "btn btn-danger" %> 
+</div>
+</div>
+<% end %>

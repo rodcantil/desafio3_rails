@@ -4,20 +4,21 @@ class SerieController < ApplicationController
   
   
   def new
-    @serie = Post.all
+    @serie = Serie.new
   end
-  def create
-    @serie = Post.new(posts_params)
-  if @serie.save
-    redirect_to desafio3_index_path
-  else
-    render :new
-  end
+    def create
+        @serie = Serie.new(serie_params)
+      if @serie.save
+        redirect_to serie_index_path
+      else
+        render :new
+      end
+    end
 
   private
 
-  def posts_params
-    params.require(:post).permit(:title)
+  def serie_params
+    params.require(:serie).permit(:title)
   end
 
 end

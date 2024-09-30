@@ -17,8 +17,8 @@ class MovieController < ApplicationController
   
   private
 
-  def posts_params
-    params.require(:movie).permit(:title, :content)
+  def movie_params
+    params.require(:movie).permit(:title)
   end
 
 end
