@@ -7,7 +7,7 @@ class MovieController < ApplicationController
     @movie = Movie.new
   end
   def create
-      @movie = Movie.new(posts_params)
+      @movie = Movie.new(movie_params)
     if @movie.save
       redirect_to movie_index_path
     else
@@ -18,7 +18,7 @@ class MovieController < ApplicationController
   private
 
   def posts_params
-    params.require(:post).permit(:title, :content)
+    params.require(:movie).permit(:title, :content)
   end
 
 end

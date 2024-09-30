@@ -20,12 +20,6 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_30_052042) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "documnetaryfilms", force: :cascade do |t|
-    t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
